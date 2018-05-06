@@ -1,4 +1,4 @@
-import {DraggableCalendar} from "./src/DraggableCalendar/index";
+import {DraggableCalendar} from "./src/index";
 export {
 	DraggableCalendar
 };
