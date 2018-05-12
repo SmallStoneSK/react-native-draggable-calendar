@@ -22,13 +22,13 @@ export class Demo4 extends PureComponent {
     console.log('onSelectionChange', newSelection);
   };
 
-	render() {
-		return (
-		  <View style={{flex: 1}}>
-			  <DraggableCalendar
+  render() {
+    return (
+      <View style={{flex: 1}}>
+        <DraggableCalendar
           ref={_ => this._calendar = _}
           onSelectionChange={this.onSelectionChange}
-          />
+        />
         <TouchableOpacity onPress={this.onGetTime} style={{
           justifyContent: 'center', alignItems: 'center',
           left: 0, right: 0, bottom: 0, paddingVertical: 15,
@@ -37,6 +37,6 @@ export class Demo4 extends PureComponent {
           <Text style={{color: '#FFF'}}>Get Time</Text>
         </TouchableOpacity>
       </View>
-		);
-	}
+    );
+  }
 }
