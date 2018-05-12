@@ -54,6 +54,10 @@ export class DraggableCalendar extends Component {
 		Helper.waitFor(0).then(() => this._genLayouts());
 	}
 
+	getSelection() {
+	  return [this.state.startDate, this.state.endDate];
+  }
+
 	resetSelection(selectionRange = []) {
 
 		// illegal selectionRange
@@ -414,7 +418,6 @@ export class DraggableCalendar extends Component {
 	}
 
 	render() {
-		console.log('render');
 		const {style} = this.props;
 		return (
 			<View style={[styles.container, style]}>

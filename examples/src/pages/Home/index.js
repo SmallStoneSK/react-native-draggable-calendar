@@ -14,6 +14,7 @@ export class Home extends PureComponent {
 		this.onPressDemo1 = this.onPressDemo1.bind(this);
 		this.onPressDemo2 = this.onPressDemo2.bind(this);
 		this.onPressDemo3 = this.onPressDemo3.bind(this);
+		this.onPressDemo4 = this.onPressDemo4.bind(this);
 	}
 
 	_onPressDemo(pageName) {
@@ -32,6 +33,9 @@ export class Home extends PureComponent {
 	onPressDemo3() {
 		this._onPressDemo('Demo3');
 	}
+  onPressDemo4() {
+    this._onPressDemo('Demo4');
+  }
 
 	render() {
 		return (
@@ -39,6 +43,7 @@ export class Home extends PureComponent {
 				<Button text={'Demo1'} onPress={this.onPressDemo1}/>
 				<Button text={'Demo2'} style={styles.demoMargin} onPress={this.onPressDemo2}/>
 				<Button text={'Demo3'} style={styles.demoMargin} onPress={this.onPressDemo3}/>
+				<Button text={'Demo4'} style={styles.demoMargin} onPress={this.onPressDemo4}/>
 			</View>
 		);
 	}

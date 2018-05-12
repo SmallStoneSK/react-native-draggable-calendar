@@ -414,7 +414,6 @@ export class DraggableCalendar extends Component {
 	}
 
 	render() {
-		console.log('render');
 		const {style} = this.props;
 		return (
 			<View style={[styles.container, style]}>
