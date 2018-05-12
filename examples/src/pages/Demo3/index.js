@@ -4,7 +4,7 @@ import {
   StyleSheet
 } from 'react-native';
 
-import {DraggableCalendar} from '../../components/DraggableCalendar/index';
+import {DraggableCalendar} from 'react-native-draggable-calendar';
 
 export class Demo3 extends PureComponent {
   _genStyles() {

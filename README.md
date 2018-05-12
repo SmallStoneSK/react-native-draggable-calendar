@@ -21,6 +21,12 @@ react-native run-android  # for android
 
 ## 2. Usage
 
+At first, you should install react-native-draggable-calendar. Like this:
+
+```bash
+npm install react-native-draggable-calendar --save
+```
+
 1. For basic usage, you can use it as following:
 
 ```javascript

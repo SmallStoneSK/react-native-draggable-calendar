@@ -6,7 +6,7 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-import {DraggableCalendar} from '../../components/DraggableCalendar/index';
+import {DraggableCalendar} from 'react-native-draggable-calendar';
 
 export class Demo4 extends PureComponent {
 
