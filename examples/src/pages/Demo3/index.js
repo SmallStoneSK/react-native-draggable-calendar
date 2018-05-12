@@ -29,15 +29,15 @@ export class Demo3 extends PureComponent {
 
 const styles = StyleSheet.create({
 	draggableContainer: {
-		backgroundColor: '#4291EF'
+		backgroundColor: '#303E4D'
 	},
 	dayText: {
-		color: '#FFF'
+		color: '#EAC351'
 	},
 	selectedDayText: {
-		color: '#4291EF'
+		color: '#303E4D'
 	},
 	selectedDayContainer: {
-		backgroundColor: '#FFF'
+		backgroundColor: '#EAC351'
 	}
 });

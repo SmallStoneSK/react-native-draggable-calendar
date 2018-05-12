@@ -10,8 +10,11 @@ export class Demo2 extends PureComponent {
 	_genStyles() {
 		return {
 			style: styles.draggableContainer,
-			monthHeaderTextStyle: styles.monthHeaderText,
-			singleDayContainerStyle: styles.selectedDayContainer,
+      headerTextStyle: styles.dayText,
+      monthHeaderTextStyle: styles.dayText,
+      dayTextStyle: styles.dayText,
+      selectedDayTextStyle: styles.selectedDayText,
+      singleDayContainerStyle: styles.selectedDayContainer,
 			beginDayContainerStyle: styles.selectedDayContainer,
 			middleDayContainerStyle: styles.selectedDayContainer,
 			endDayContainerStyle: styles.selectedDayContainer
@@ -24,12 +27,15 @@ export class Demo2 extends PureComponent {
 
 const styles = StyleSheet.create({
 	draggableContainer: {
-		backgroundColor: '#FFF'
+		backgroundColor: '#CD7730'
 	},
-	monthHeaderText: {
-		textAlign: 'center'
+	dayText: {
+		color: '#FFF'
 	},
 	selectedDayContainer: {
-		backgroundColor: '#50AD98'
-	}
+		backgroundColor: '#FFF'
+	},
+  selectedDayText: {
+	  color: '#CD7730'
+  }
 });
