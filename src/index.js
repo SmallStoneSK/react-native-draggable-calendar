@@ -82,7 +82,7 @@ export class DraggableCalendar extends Component {
 
   _getRefLayout(ref) {
     return new Promise(resolve => {
-      UIManager.measure(findNodeHandle(ref), (x, y, width, height, pageX, pageY) => {
+      UIManager.measureLayout(findNodeHandle(ref), findNodeHandle(this._sv), () => {}, (x, y, width, height, pageX, pageY) => {
         resolve({x, y, width, height, pageX, pageY});
       });
     });
@@ -327,7 +327,7 @@ export class DraggableCalendar extends Component {
     const {calendarData} = this.state;
     return (
       <View style={styles.bodyContainer}>
-        <ScrollView scrollEventThrottle={1} onScroll={this._onScroll}>
+        <ScrollView ref={_ => this._sv = _} scrollEventThrottle={1} onScroll={this._onScroll}>
           {Object
             .keys(calendarData)
             .map((key, index) => this._renderMonth({identifier: key, data: calendarData[key], index}))
