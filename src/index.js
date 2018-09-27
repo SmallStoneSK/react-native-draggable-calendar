@@ -372,19 +372,19 @@ export class DraggableCalendar extends Component {
   }
 
   _renderDay(item, index) {
-    const styles = {};
-    const styleKeys = [
+    const {renderDay} = this.props;
+    const styles = [
       'dayTextStyle', 'selectedDayTextStyle',
       'dayContainerStyle', 'singleDayContainerStyle',
       'beginDayContainerStyle', 'middleDayContainerStyle', 'endDayContainerStyle'
-    ];
-    styleKeys.forEach(key => styles[key] = this.props[key]);
+    ].map(_ => this.props[_]);
     return (
       <Day
         key={`day-${index}`}
         {...styles}
         data={item}
         status={item.status}
+        renderDay={renderDay}
         onPress={this._onPressDay}
       />
     );

@@ -32,7 +32,7 @@ export class Day extends PureComponent {
         4: [styles.endDayContainer, endDayContainerStyle]
       };
       usedDayTextStyle.push(styles.selectedDayText, selectedDayTextStyle);
-      usedDayContainerStyle.push(...(containerStyleMap[data.status] || {}));
+      usedDayContainerStyle.push(...(containerStyleMap[data.status] || []));
     }
     return {usedDayTextStyle, usedDayContainerStyle};
   }
